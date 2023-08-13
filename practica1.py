@@ -16,4 +16,5 @@ print(f"********************\n* El resultado es: {x} \n********************")
 x =  10
 y = 5
 #act 12) 2) 1)
-print(x/y + 1)g
+print(x/y + 1)
+#
