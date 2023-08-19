@@ -1,4 +1,4 @@
-print("\nact 16)A)")
+print("act 1)")
 a = int(input("Ingrese un numero entero: "))
 b = int(input("Ingrese un numero entero: "))
 c = int(input("Ingrese un numero entero: "))
@@ -38,7 +38,7 @@ if (a - b) > 0:
 if (a - b) > 0 and (a % 2) == 0: 
     print(a, "-", b, "da un numero par positivo")
 
-print("\nact 16)A)")
+print("\nact 2)")
 edad = int(input("ingresa tu edad: "))
 distancia = int(input("ingresa tu distancia del centro de votacion en kilometros: "))
 
