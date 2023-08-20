@@ -29,7 +29,6 @@ else :
 
 print("\nact 8)")
 d = int(input("Ingresa un numero entero positivo: "))
-
 if d > 9 :
     print("Ingresaste un numero de mas de 1 cifra.")
 else :

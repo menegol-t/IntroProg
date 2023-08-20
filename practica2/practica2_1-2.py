@@ -41,7 +41,6 @@ if (a - b) > 0 and (a % 2) == 0:
 print("\nact 2)")
 edad = int(input("ingresa tu edad: "))
 distancia = int(input("ingresa tu distancia del centro de votacion en kilometros: "))
-
 if (edad >= 18 and edad <= 70 and distancia <= 500) :
     print("tenes que ir a votar")
 else :
