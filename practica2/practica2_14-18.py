@@ -31,9 +31,12 @@ print("\nact 17) a.x + b = 0")
 d = int(input("El valor A de la ecuacion lineal es: "))
 e = int(input("El valor B de la ecuacion lineal es: "))
 resultado = (-1*d)/e
-if (d == 0) :
+if (d == 0 and e == 0) :
     print("Solucion: Todos los reales")
-else : print("la solucion es: ", resultado)
+elif (d == 0 and e != 0):
+    print("Solucion: No hay solucion")
+else : 
+    print("Solucion: ", resultado)
 
 print("\nact 18)")
 f = int(input("El valor A de la ecuacion cuadratca es: "))
@@ -45,6 +48,6 @@ raizResta = (- g + (discriminante ** 0.5)) / (2 * f)
 if discriminante < 0 :
     print("No tiene raices.")
 if discriminante == 0 :
-    print(raizSuma)
+    print(-g/2*d)
 if discriminante > 0 :
     print(raizSuma, raizResta)
