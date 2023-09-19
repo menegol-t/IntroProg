@@ -1,16 +1,13 @@
-print("Act en clase, dar vuelta una oracion. ")
+print("Act en clase, dar vuelta una oracion de dos palabras. Ex: Hola Mundo -> Mundo Hola. ")
 pal = input("Ingresa una frase de dos palabras: ")
 primera = ""
 ultima = ""
 
 for char in pal :
     primera +=char
+    ultima +=char
     if (char == " "):
         primeraPalabra = primera
-
-for char in pal : 
-    ultima += char
-    if (char == " "):
         ultima = ""
 
-print(ultima + " " + primeraPalabra)
+print(ultima, primeraPalabra)

@@ -1,13 +1,13 @@
-# print("Act 30)")
-# a = input("Ingresa una palabra: ")
-# b = input("Ingresa una letra: ")
-# newA = ""
-# for char in a :
-#     if char == b :
-#         newA+="*"
-#     else:
-#         newA+=char
-# print(newA)
+print("Act 30)")
+a = input("Ingresa una palabra: ")
+b = input("Ingresa una letra: ")
+newA = ""
+for char in a :
+    if char == b :
+        newA+="*"
+    else:
+        newA+=char
+print(newA)
 
 print("\nAct 32)")
 x = input("Ingresa tu nombre: ")
