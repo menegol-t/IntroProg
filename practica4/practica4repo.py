@@ -55,3 +55,20 @@ def mayorDeTres(n, m, o):
         return m
     elif(o >= n) and (o >= m):
         return o
+
+# print("\nAct 10)")        
+def potencia (a, b): return a ** b
+
+# print("\n Act 11)A)")
+def sumaDeDivisores(n): 
+    acum = 0
+    for i in range(1, n): #saco de los divisores a si mismo, porque si no nucna va a dar perfecto y siempre abundante
+        if n % i == 0 : 
+            acum += i
+    return acum
+
+# print("\n Act 11)B)")
+def esPerfecto(n): return True if sumaDeDivisores(n) == n else False
+
+# print("\n Act 11)C)")
+def esAbundante(n): return True if sumaDeDivisores(n) > n else False
