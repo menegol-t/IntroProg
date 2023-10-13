@@ -1,13 +1,13 @@
-#print("\n actividad 3)A)")
+# print("\n actividad 3)A)")
 def repe (cadena):
     print(cadena)
     print(cadena)
     print(cadena)
     
-#print("\n actividad 4)A)")
+# print("\n actividad 4)A)")
 def promedio2 (a, b): return (a + b)/2
     
-#print("\n actividad 4)C)")
+# print("\n actividad 4)C)")
 def promedio3 (a, b, c): return (a + b + c)/3
 
 # print("\nAct 5)")
