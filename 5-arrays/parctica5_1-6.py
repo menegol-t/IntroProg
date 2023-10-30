@@ -51,3 +51,27 @@ def tieneRepetidos(list):
                 repeticiones+=1
     if repeticiones > len(lista) :
         return True
+
+print("Act24)\n")
+def pagara(nCli, localidad):
+    cobro = 0
+    if cobertura(nCli) == "Plata" :
+        if usados(nCli) > 5 :
+            if radioCobertura(nCli, localidad):
+                cobro+=50
+            else: 
+                cobro+=80
+        else:
+            if not radioCobertura(nCli, localidad) :
+                cobro +=30
+    else :
+        if not radioCobertura(nCli, localidad):
+            cobro+=30
+    return cobro
+        
+print("Act25)\n")
+for patente in darPatentes(8):
+    if controlVelocidad(patente) > 100:
+        if reincidente(patente):
+            enviarMulta(patente, costoActual()*2)
+        else: enviarMulta(patente, costoActual())
