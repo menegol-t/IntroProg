@@ -55,18 +55,14 @@ def tieneRepetidos(list):
 print("Act24)\n")
 def pagara(nCli, localidad):
     cobro = 0
-    if cobertura(nCli) == "Plata" :
-        if usados(nCli) > 5 :
-            if radioCobertura(nCli, localidad):
-                cobro+=50
-            else: 
-                cobro+=80
-        else:
-            if not radioCobertura(nCli, localidad) :
-                cobro +=30
-    else :
-        if not radioCobertura(nCli, localidad):
-            cobro+=30
+    if usados(nCli) > 5 and cobertura(ncli)=="Plata":
+        if radioCobertura(nCli, localidad):
+            cobro+=50
+        else: 
+            cobro+=80
+    else:
+        if not radioCobertura(nCli, localidad) :
+            cobro +=30
     return cobro
         
 print("Act25)\n")
