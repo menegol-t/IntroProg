@@ -49,5 +49,5 @@ def tieneRepetidos(list):
         for i in range(1, len(list)):
             if elem == list[i] :
                 repeticiones+=1
-    if repeticiones > 1 :
+    if repeticiones > len(lista) :
         return True
