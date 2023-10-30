@@ -46,7 +46,7 @@ print("Act 6)\n")
 def tieneRepetidos(list):
     repeticiones = 0
     for elem in list:
-        for i in range(1, len(list)):
+        for i in range(len(list)):
             if elem == list[i] :
                 repeticiones+=1
     if repeticiones > len(lista) :
