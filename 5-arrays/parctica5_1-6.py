@@ -57,7 +57,7 @@ def dondeAparece(lista, blanco):
     for i in range(len(lista)):
         if lista[i] == blanco:
             return 1
-        return -1
+    return -1
     
 codigo = int(input("Ingresa un codigo: "))
 codigosDeProductos = [32, 578, 49]
@@ -65,7 +65,6 @@ productos = ["azucar", "yerba", "arroz"]
 precios = ["1000$", "2500$", "800$"]
 
 elemento = dondeAparece(codigosDeProductos, codigo)
-
 if elemento == -1 :
     print("Elemento inexistente")
 else: 
