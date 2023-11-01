@@ -1,34 +1,32 @@
-# print("Act 1)\n")
-# animales = ["elefante", "jirafa", "mono"]
-# nuevoAnimal = input("Ingresa un nuevo animal: ")
-# animales.append(nuevoAnimal)
-# print(animales[3])
+print("Act 1)\n")
+animales = ["elefante", "jirafa", "mono"]
+nuevoAnimal = input("Ingresa un nuevo animal: ")
+animales.append(nuevoAnimal)
+print(animales[3])
 
-# print("Act 2)\n")
-# listaEnteros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("Act 2)\n")
+listaEnteros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def mostrarEnUnaLinea(listaEnteros) :
+    for el in listaEnteros :
+        print(el, end=" ")
+    print("\n")
+mostrarEnUnaLinea(listaEnteros)
 
-# def mostrarEnUnaLinea(listaEnteros) :
-#     for el in listaEnteros :
-#         print(el, end=" ")
-#     print("\n")
+print("Act 3)\n")
+def divisores(entero):
+    divisoresDelEntero = []
+    for i in range(1, entero+1):
+        if entero % i == 0 :
+            divisoresDelEntero.append(i)
+    return divisoresDelEntero
+print(divisores(360))
 
-# mostrarEnUnaLinea(listaEnteros)
-
-# print("Act 3)\n")
-# def divisores(entero):
-#     divisoresDelEntero = []
-#     for i in range(1, entero+1):
-#         if entero % i == 0 :
-#             divisoresDelEntero.append(i)
-#     return divisoresDelEntero
-# print(divisores(360))
-
-# print("Act 4)\n")
-# def laMasCorta(primeraLista,segundaLista):
-#     if len(primeraLista) <= len(segundaLista):
-#         return primeraLista
-#     else:
-#         return segundaLista
+print("Act 4)\n")
+def laMasCorta(primeraLista,segundaLista):
+    if len(primeraLista) <= len(segundaLista):
+        return primeraLista
+    else:
+        return segundaLista
 
 print("Act 5)\n")
 def sonFactores(n, listN):
@@ -39,7 +37,6 @@ def sonFactores(n, listN):
     if contadorDeDivisores == len(listN):
         return True
     else: return False
-
 print(sonFactores(2, [2, 4, 15]))
 
 print("Act 6)\n")
@@ -69,6 +66,47 @@ if elemento == -1 :
     print("Elemento inexistente")
 else: 
     print(codigo, productos[elemento], precios[elemento])
+
+print("Act 8)\n")
+def promedio(ls):
+    sumaDeElementos = 0
+    numeroDeElementos = 0
+    for elem in ls:
+        sumaDeElementos+=elem
+        numeroDeElementos+=1
+    return sumaDeElementos/numeroDeElementos
+print(promedio([1,2,3,4,5,6,78,8,9]))
+
+print("Act 9)\n")
+def maximo(ls):
+    Max = 0
+    for elem in ls:
+        if elem > Max:
+            Max = elem
+    return Max
+print(maximo([1,2,3,4,5,6,78,8,9]))
+
+print("Act 10)\n")
+def maximoIndice(ls):
+    indice = 0
+    elementoMasGrande = 0
+    for i in range(len(ls)): 
+        if ls[i] >  elementoMasGrande:
+            indice = i
+            elementoMasGrande = ls[i]
+    return indice
+print(maximoIndice([1,2,3,4,5,6,78,8,9]))
+
+print("Act 11)\n")
+def maximoEntre(ls, min, max):
+    indice = 0
+    elementoMasGrande = 0
+    for i in range(len(ls)):
+        if min < i < max and ls[i] > elementoMasGrande:
+            indice = i
+            elementoMasGrande = ls[i]
+    return indice
+print(maximoEntre([1,2,3,4,5,6,78,8,9],0,4))
 
 print("Act24)\n")
 def pagara(nCli, localidad):
